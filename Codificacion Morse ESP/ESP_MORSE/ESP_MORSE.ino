@@ -169,6 +169,7 @@ void demostrarDecodificacionMorse(char mensaje[]) {
       token = strtok(NULL, delimitador);
     }
   }
-
+  Serial.println(cadena);
+  Serial.println("");
   scrollText(1, cadena, 250, 16);
 }
