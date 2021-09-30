@@ -10,8 +10,8 @@ void handleFormText(AsyncWebServerRequest *request)
   Serial.println(CodificacionMorse(Buf));
 //  ConnectUDP();
 //  SendUDP_Packet(MiText);
-  //String response = "<a href='/'> Go Back </a>";
-  //request->send(200, "text/html", response);
+  String response = "<a href='/'> Go Back </a>";
+  request->send(200, "text/html", CodificacionMorse(Buf));
 
   request->redirect("/");
 }
