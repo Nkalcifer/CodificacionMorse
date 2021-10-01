@@ -1,0 +1,78 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+.rojofocus:focus { border: 1px solid #FF5049 !important; }
+
+.cabecero {
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: #fff;
+    background: url(fondo.png), #7b4397;
+    background: url(fondo.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+    background: url(fondo.png), linear-gradient(to left, #7b4397, #dc2430)
+}
+
+.titulo {
+    position: absolute;
+    width: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.esp_titu{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+
+}
+
+.contenedor{
+    width: 100%;
+    height: 450px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+
+.ingresar{
+    width: 600px;
+    height: 350px;
+    align-self:center;
+    border: 5px solid rgba(209, 25, 80, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.salto{
+    margin: 25px ;
+}
+
+.text2{
+    font-size: 35px;
+}
+
+

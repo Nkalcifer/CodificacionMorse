@@ -2,41 +2,76 @@
 <html class="no-js" lang="">
 
 <head>
-    <title>ESP8266 MORSE</title>
+    <title>ESP8266 Material Lite</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 
 <body>
-    <link rel="stylesheet" href="vendor/google-fonts.css">
-    <link rel="stylesheet" href="vendor/material.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-design-lite@1.3.0/dist/material.indigo-pink.min.css">
 
-    <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--4-col">
-            <form action="/SetText" method="post">
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" name="miText">
-                    <label class="mdl-textfield__label" for="sample3">Mensaje</label>
-                </div>
-                <div class="mdl-cell mdl-cell--1-col">
-                    <button
-                        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit" value="Submit">Enviar</button>
-                </div>
-            </form>
-        </div>
+<div class="cabecero">
+   <div class="titulo">
+       <div class="esp_titu">
+           MORSE EN MODULOS ESP
+       </div>          
+   </div>
+</div>
+
+
+<div class="contenedor">
+    <div class="ingresar">
+        
+        <form class="row g-9" action="/SetText" method="post">
+
+            <div class="salto"></div>
+            <div class="texto esp_titu text2">MENSAJE A CODIFICAR</div>
+            <div class="salto"></div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Escriba el mensaje aquí" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Escriba el mensaje aquí</label>
+              </div>
+           <div class="salto">
+
+           </div>
+            <div class="d-grid gap-2 col-6 mx-auto salto">
+                <button class="btn btn-danger" type="submit" value="Submit">Codificar</button>
+             </div>
+         </form>        
+
     </div>
+</div>
+
+ 
+  
+<!-- <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell">
+        <form action="#">
+            <div class="mdl-textfield mdl-js-textfield ">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Escriba el mensaje aquí</label>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mdl-grid" >
+    <div class="mdl-cell mdl-cell--1-col">
+        <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Enviar</button>
+    </div>
+</div> -->
 
 
 
 
-
-    <script src="vendor/material.js"></script>
+   
     <script src="https://cdn.jsdelivr.net/combine/npm/vue@2.6.10,npm/material-design-lite@1.3.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 
 </html>
